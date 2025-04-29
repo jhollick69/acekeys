@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ace Keys – Locksmith Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+    p.tagline {
+      font-size: 1.2rem;
+      color: #f39c12;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .button {
+      display: inline-block;
+      background-color: #f39c12;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 300px;
+      margin-top: 1rem;
+    }
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .submit-btn {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Ace Keys Logo">
+    <h1>Ace Keys</h1>
+    <p class="tagline">Keys to Security – At Half the Dealer’s Price.</p>
+    <a href="#contact" class="button">Contact Us</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Locked out? Give us a call. Fast locksmithing and repair service. We repair all types of doors, residential & commercial. We carry large stocks of parts including locks, hinges and handles. Established in 1988, Ace Keys is a reliable and trusted business with qualified technicians ready to assist you. All work is fully guaranteed.</p>
+      <a href="#contact" class="button">Get a Free Quote</a>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Car Key Replacement & Programming</li>
+        <li>House & Door Lock Key Cutting</li>
+        <li>Lost or Stolen Key Replacement</li>
+        <li>Lockout Assistance</li>
+        <li>Emergency Mobile Locksmith</li>
+        <li>Free Surveys and Quotations</li>
+        <li>Fast Response</li>
+        <li>Affordable Service</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Mobile Service & Directions</h2>
+      <p>📍 Mobile service across St. Helier, Jersey.</p>
+      <p>📍 Car keys cut and remotes programmed for virtually any car. Lost your car key? We can help!</p>
+      <p>🚗 Directions to our base: Head south towards Havre des Pas/A4 → Turn right onto Havre des Pas/A4 → Turn right onto Green St → Turn left to stay on Green St → Turn left onto La Route du Fort/A17 → La Route du Fort/A17 turns right and becomes La Route de la Libération/A1 → Take the slip road to Elizabeth Harbour/Ferry Terminal → Destination will be on the left.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.293153331218!2d-2.098154!3d49.18246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDExJzAwLjgiTiAywrAwNSc1My4zIlc!5e0!3m2!1sen!2sje!4v1714390000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Request a Quote</h2>
+      <form name="quote" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="quote">
+
+        <label for="service">Type of Service:</label>
+        <select id="service" name="service">
+          <option value="car">Car</option>
+          <option value="house">House</option>
+          <option value="boat">Boat</option>
+          <option value="safe">Safe</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="details">Details (Car: make/model/year/VIN/key code – House: lock type/issue, etc.):</label>
+        <textarea id="details" name="details" placeholder="Enter all relevant details here..."></textarea>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="location">Your Location:</label>
+        <input type="text" id="location" name="location">
+
+        <label for="urgency">Preferred Contact Time / Urgency:</label>
+        <input type="text" id="urgency" name="urgency">
+
+        <button type="submit" class="submit-btn">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Ace Keys – Affordable Locksmith Solutions
+  </footer>
+</body>
+</html>
